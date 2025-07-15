@@ -1,0 +1,65 @@
+RetroRev Cars – README (Same Style as You Gave)
+
+RetroRev Cars - Classic & Modern Car Showcase  
+---------------------------------------------  
+A clean, modern, and fully responsive front-end car gallery website built using HTML5, CSS3, and JavaScript. The project highlights classic and modern cars, showcasing their prices, video clips, and image collections with a retro-inspired UI design.
+
+Project Highlights  
+------------------  
+* Fully functional responsive navigation menu  
+* Popular Cars section with pricing and See More buttons  
+* Embedded video gallery with autoplay car reels  
+* Stylish image gallery with shelf-like layout  
+* Functional contact form using Web3Forms API  
+* Animated thank-you message on form submission  
+* Minimal, organized code structure  
+
+Technologies Used  
+-----------------  
+* HTML5 for structured content  
+* CSS3 for layout, animations, and responsiveness  
+* JavaScript for menu toggling and form interaction  
+* Google Fonts for custom typography  
+* Web3Forms API for contact form submission  
+
+Project Structure  
+-----------------  
+RetroRev-Cars/
+│
+├── index.html           → Main HTML structure
+├── style.css            → CSS for styling and layout
+├── script.js            → JavaScript for interactivity
+├── Read Me.txt          → Project overview and description
+│
+├── images/              → Car images, videos, and assets
+│   ├── Car - (1).jpg
+│   ├── Car - (2).jpg
+│   ├── Car - (3).jpg
+│   ├── cars (1).jpg
+│   ├── cars (2).jpg
+│   ├── cars (3).avif
+│   ├── cars (4).jpg
+│   ├── cars (5).avif
+│   ├── cars (6).png
+│   ├── Creta.mp4
+│   ├── Thar.mp4
+│   ├── Bolero.mp4
+│   ├── Stock Videos Cars (1).mp4
+│   ├── Stock Videos Cars (2).mp4
+│   ├── Stock Videos Cars (3).mp4
+│   ├── Stock Videos Cars (4).mp4
+│   ├── Stock Videos Cars (5).mp4
+│   ├── Stock Videos Cars (6).mp4
+│   └── rskpp0b_1638613-removebg-preview.png
+
+How to Run  
+----------  
+1. Download or clone this repository.  
+2. Open `index.html` in your browser.  
+3. Make sure `style.css`, `script.js`, and the `images` folder are in the same directory.
+
+Note: The contact form is powered by Web3Forms. Ensure your `access_key` is active and valid. You can generate your key at [web3forms.com](https://web3forms.com).
+
+Author  
+------  
+This project was created by BhavaGeetha as part of a front-end portfolio. It reflects creative UI building and responsive layout skills tailored to automobile showcases and car enthusiasts.

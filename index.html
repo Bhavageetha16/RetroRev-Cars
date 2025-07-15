@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroRev Cars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Menu -->
+    <div class="menu target center">
+      <div class="menu-line menu-line-1"></div>
+      <div class="menu-line menu-line-2"></div>
+    </div>
+    <!-- End of Menu -->
+
+    <!-- Navbar -->
+    <nav class="navbar target">
+      <a href="#home" class="navbar-link">Home</a>
+      <a href="#popular-cars" class="navbar-link">Popular Cars</a>
+      <a href="#video-gallery" class="navbar-link">Video Gallery</a>
+      <a href="#image-gallery" class="navbar-link">Image Gallery</a>
+      <a href="#contact" class="navbar-link">Contact</a>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Section 1 -->
+    <div class="wrapper">
+      <section class="section-1 target center" id="home">
+        <h1 class="section-heading section-1-heading">Classic Cars</h1>
+        <img src="images/rskpp0b_1638613-removebg-preview.png" class="section-1-img" />
+      </section>
+    </div>
+    <!-- End of Section 1 -->
+
+    <!-- Section 2 -->
+    <div class="wrapper">
+      <section class="section-2 target" id="popular-cars">
+        <h1 class="section-heading">Popular Cars</h1>
+        <div class="cards-wrapper center">
+          <div class="card">
+            <h2 class="car-name"></h2>
+            <img src="images/Car - (2).jpg" class="card-img" />
+            <h3 class="car-price">₹36,05,000</h3>
+            <button type="button" class="card-btn">See More</button>
+          </div>
+          <div class="card">
+            <h2 class="car-name"></h2>
+            <img src="images/Car - (1).jpg" class="card-img" />
+            <h3 class="car-price">₹29,90,000</h3>
+            <button type="button" class="card-btn">See More</button>
+          </div>
+          <div class="card">
+            <h2 class="car-name"></h2>
+            <img src="images/Car - (3).jpg" class="card-img" />
+            <h3 class="car-price">₹52,60,000</h3>
+            <button type="button" class="card-btn">See More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of Section 2 -->
+
+  <!-- Section 3 -->
+<div class="wrapper">
+  <section class="section-3 target" id="video-gallery">
+    <h1 class="section-heading">Video Gallery</h1>
+    <div class="videos-wrapper">
+      <video src="images/Creta.mp4" muted loop autoplay class="video"></video>
+      <video src="images/Stock Videos Cars (2).mp4" muted loop autoplay class="video"></video>
+      <video src="images/Thar.mp4" muted loop autoplay class="video"></video>
+      <video src="images/Stock Videos Cars (4).mp4" muted loop autoplay class="video"></video>
+      <video src="images/Bolero.mp4" muted loop autoplay class="video"></video>
+      <video src="images/Stock Videos Cars (6).mp4" muted loop autoplay class="video"></video>
+    </div>
+  </section>
+</div>
+<!-- End of Section 3 -->
+
+  <!-- Section 4 -->
+<div class="wrapper">
+  <section class="section-4 target" id="image-gallery">
+
+    <h1 class="section-heading">Image Gallery</h1>
+
+    <!-- 💡 Inline style block just below the heading to add spacing fix -->
+    <style>
+      .section-4 .section-heading {
+        margin-bottom: 5rem; /* ✅ Adds nice space between heading and images */
+      }
+    </style>
+
+    <div class="gallery center">
+      <div class="gallery-shelf"></div>
+      <img src="images/cars (1).jpg" class="gallery-img-1" />
+      <img src="images/cars (2).jpg" class="gallery-img-2" />
+      <img src="images/cars (3).avif" class="gallery-img-3" />
+    </div>
+    <div class="gallery center">
+      <div class="gallery-shelf"></div>
+      <img src="images/cars (4).jpg" class="gallery-img-1" />
+      <img src="images/cars (5).avif" class="gallery-img-2" />
+      <img src="images/cars (6).png" class="gallery-img-3" />
+    </div>
+  </section>
+</div>
+<!-- End of Section 4 -->
+
+    <!-- Section 5 -->
+<div class="wrapper">
+  <section class="section-5 target" id="contact">
+    <h1 class="section-heading">Contact Us</h1>
+
+    <!-- Thank You Message (shown after redirect) -->
+    <div id="thank-you-message" style="display: none; color: #fff; font-size: 1.8rem; text-align: center; margin-bottom: 2rem;">
+      Thank you for reaching out! I'll get back to you shortly.
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" onsubmit="showThankYou(event)">
+      <input type="hidden" name="access_key" value="69e5cf26-9765-4b6d-b4d4-5d6e66943dc8" />
+      <input type="hidden" name="redirect" value="#thank-you" />
+
+      <input type="text" class="form-input" placeholder="Your Full Name" name="name" required />
+      <input type="email" class="form-input" placeholder="Your Email" name="email" required />
+      <input type="text" class="form-input" placeholder="Your Phone Number" name="phone" />
+      <textarea class="form-input" placeholder="Enter your message" name="message" required></textarea>
+
+      <input class="form-btn" type="submit" value="Send Message" />
+    </form>
+
+    <p class="copyright">
+      Copyright &copy; BhavaGeetha All Rights Reserved
+    </p>
+  </section>
+</div>
+<!-- End of Section 5 -->
+
+<!-- Success Redirect Anchor -->
+<div id="thank-you"></div>
+
+<script>
+  function showThankYou(event) {
+    // Let Web3Forms handle actual submission and redirect,
+    // but show message immediately for better UX.
+    const form = event.target;
+    const messageBox = document.getElementById("thank-you-message");
+    messageBox.style.display = "block";
+    setTimeout(() => {
+      messageBox.style.display = "none";
+      form.reset();
+    }, 4000);
+  }
+</script>
+<script src="script.js"></script>
+  </body>
+</html>
